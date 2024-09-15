@@ -15,7 +15,7 @@ const Home = () => {
           {products.map((product) => {
             const { id, img, title, price, description, quantity } = product;
             return (
-              <article key={id} className='bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300'>
+              <article key={id} className='bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between'>
                 <img src={img} alt={title} className='w-full h-48 object-cover rounded-md mb-4' />
                 <h3 className='text-xl font-semibold text-gray-700 mb-2'>{title}</h3>
                 <p className='text-lg text-gray-500 mb-4'>{description}</p>
